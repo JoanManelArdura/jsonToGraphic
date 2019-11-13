@@ -11,6 +11,8 @@ public class GraphicController {
 	@Autowired
 	private GraphicService graServ;
 	
+	//we only have 1 act of listening so far
+	
 	@RequestMapping(method=RequestMethod.POST,value="{id}")
 	public void addGraphic(Graphic graphic) {
 		graServ.addGraphic(graphic);
