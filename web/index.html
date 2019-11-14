@@ -12,12 +12,11 @@
 
   <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	
+	<link rel="stylesheet" src="style.css">
 	<script src="script.js" defer></script>
 </head>
 
 <body>
-
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
@@ -61,7 +60,21 @@
 		<p>Your browser don't allows beauty!</p>
 	</canvas>
   </div>
-  <div><button>Click me</button></div>
+  <div <div class="row d-flex justify-content-center text-center"> 
+	<form class="w-50 p-3">
+		<div class="form-group">
+			<label for="graphTitle">Title of the graph</label>
+			<input type="title" class="form-control" id="graphTitle"  placeholder="Enter Title">
+			<small id="titleHelp" class="form-text text-muted">Enter a cool title for your cool graphic</small>
+		</div>
+		<div class="form-group">
+			<label for="valuesToShow">Numbers to represent</label>
+			<input type="valuesToShow" class="form-control" id="valuesToShow" placeholder="Numeros a representar">
+		</div>
+		
+		<button type="submit" class="btn btn-primary">Submit</button>
+	</form>
+	</div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

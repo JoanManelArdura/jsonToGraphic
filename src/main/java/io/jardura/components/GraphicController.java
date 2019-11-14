@@ -13,7 +13,7 @@ public class GraphicController {
 	
 	//we only have 1 act of listening so far
 	
-	@RequestMapping(method=RequestMethod.POST,value="{id}")
+	@RequestMapping(method=RequestMethod.POST,value="/Graphic")
 	public void addGraphic(Graphic graphic) {
 		graServ.addGraphic(graphic);
 	}
