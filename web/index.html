@@ -56,12 +56,13 @@
     </div>
   </div>
   
-  <div class="jumbotron">
-	<canvas id="myChart" width="400" height="400">
+  <div class="jumbotron-fluid">
+  <div class="col-md-6" style="float:none;margin:auto;">
+	<canvas id="myChart">
 		<p>Your browser don't allows beauty!</p>
 	</canvas>
   </div>
-  
+  </div>
   <div class="row d-flex justify-content-center text-center"> 
 	<form class="w-50 p-3" method="post">
 		<div class="form-group">
@@ -70,11 +71,12 @@
 			<small id="titleHelp" class="form-text text-muted">Enter a cool title for your cool graphic</small>
 		</div>
 		<div class="form-group">
-			<label for="numbersToRepresent">Numbers to represent</label>
-			<input name='valuesToShow' type="valuesToShow" class="form-control" id="valuesToShow" placeholder="Numeros a representar">
+			<label for="numbersToRepresent">Numbers to represent, coma separated ,maximum 6</label>
+			<input name='valuesToShow' type="valuesToShow" class="form-control" id="valuesToShow" placeholder="example: 2,78,4,67">
 		</div>
 		
 		<button type="button" id="boto1" class="btn btn-primary" >Submit</button>
+		<button id="exportButton" type="button">Export as PDF</button>
 	</form>
 	</div>
 

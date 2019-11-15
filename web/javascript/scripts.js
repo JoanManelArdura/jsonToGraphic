@@ -4,6 +4,8 @@ var title3 = document.querySelector("#title");
 var valuesToShow2 = document.querySelector("#valuesToShow");
 var boto1 = document.querySelector("#boto1");
 var xhttp = new XMLHttpRequest();
+var ctx = document.getElementById('myChart');
+//var pdf = new jsPDF();
 
 
 function sendJson(){
@@ -15,20 +17,14 @@ function sendJson(){
 	console.log(myJsonString);
 	xhttp.open("POST", "localhost:8080/graphic", true);
 	xhttp.send(myJsonString);
-}
-window.onload=function(){
-
-boto1.addEventListener("click", sendJson, false);
-
-
-var ctx = document.getElementById('myChart').getContext('2d');
-var myChart = new Chart(ctx, {
+	// aqui definim la taula a myChart
+	var myChart = new Chart(ctx, {
     type: 'bar',
     data: {
         labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
         datasets: [{
-            label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            label: title,
+            data: valuesToShow,
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -58,4 +54,19 @@ var myChart = new Chart(ctx, {
         }
     }
 });
+}
+
+function exportToPdf(){
+	
+    pdf.addImage(dataURL, 'JPEG', 0, 0);
+    pdf.save("download.pdf");
+}
+
+window.onload=function(){
+
+boto1.addEventListener("click", sendJson, false);
+exportButton.addEventListener("click", exportToPdf, false);
+
+
+
 }
