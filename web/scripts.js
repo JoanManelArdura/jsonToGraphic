@@ -12,9 +12,6 @@ function sendJson(){
 	let title = title3.value;
 	let valuesToShow = valuesToShow2.value.split(",");
 	var myJsonString = JSON.stringify({ "title" : title, "valuesToShow": valuesToShow});
-	console.log(title);
-	console.log(valuesToShow);
-	console.log(myJsonString);
 	xhttp.open("POST", "localhost:8080/graphic", true);
 	xhttp.send(myJsonString);
 	// aqui definim la taula a myChart
