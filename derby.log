@@ -1,11 +1,11 @@
 ----------------------------------------------------------------
-Fri Nov 15 10:36:35 CET 2019:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-016e-6e6b-e4fa-000011223ad8 
-on database directory memory:C:\reki\jsonToGraphic\testdb with class loader sun.misc.Launcher$AppClassLoader@764c12b6 
-Loaded from file:/C:/Users/formacio/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
+Sat Nov 16 17:36:55 CET 2019:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-016e-7513-146a-0000011e4950 
+on database directory memory:E:\projectes\projectes java\jsonToGraphic\testdb with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@2626b418 
+Loaded from file:/C:/Users/reki6/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_231-b11
-user.dir=C:\reki\jsonToGraphic
+java.runtime.version=12.0.1+12
+user.dir=E:\projectes\projectes java\jsonToGraphic
 os.name=Windows 10
 os.arch=amd64
 os.version=10.0
