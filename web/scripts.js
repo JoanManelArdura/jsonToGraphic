@@ -65,11 +65,7 @@ function saveAsPDF() {
       }
    });
 }
-function exportToPdf(){
-	
-    pdf.addImage(dataURL, 'JPEG', 0, 0);
-    pdf.save("download.pdf");
-}
+
 
 window.onload=function(){
 
