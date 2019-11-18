@@ -55,6 +55,16 @@ function sendJson(){
 });
 }
 
+function saveAsPDF() {
+   html2canvas(document.getElementById("myChart"), {
+      onrendered: function(canvas) {
+         var img = canvas.toDataURL(); //image data of canvas
+         var doc = new jsPDF();
+         doc.addImage(img, 10, 10);
+         doc.save('test.pdf');
+      }
+   });
+}
 function exportToPdf(){
 	
     pdf.addImage(dataURL, 'JPEG', 0, 0);
@@ -64,7 +74,7 @@ function exportToPdf(){
 window.onload=function(){
 
 boto1.addEventListener("click", sendJson, false);
-exportButton.addEventListener("click", exportToPdf, false);
+exportButton.addEventListener("click", saveAsPDF, false);
 
 
 
